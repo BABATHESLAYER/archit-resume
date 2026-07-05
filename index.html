@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Archit Gaware - Cloud & ML Developer Portfolio Resume. An interactive, 8-bit retro gaming ice cream parlor experience.">
+    <title>Archit Gaware | Cloud & ML Parlor Resume</title>
+    
+    <!-- Retro Pixel Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-disabled">
+
+    <!-- CRT Visual Overlays -->
+    <div class="crt-overlay" id="screen-scanlines"></div>
+    <div class="crt-vignette" id="screen-vignette"></div>
+
+    <!-- Floating Background Elements -->
+    <div class="sparkle-particle" style="top: 8%; left: 8%; animation-delay: 0s;">💖</div>
+    <div class="sparkle-particle" style="top: 75%; left: 5%; animation-delay: 1.2s;">🌸</div>
+    <div class="sparkle-particle" style="top: 15%; right: 6%; animation-delay: 2s;">✨</div>
+    <div class="sparkle-particle" style="top: 85%; right: 8%; animation-delay: 0.7s;">💖</div>
+    <div class="sparkle-particle" style="top: 45%; left: 4%; animation-delay: 1.8s;">🍦</div>
+    <div class="sparkle-particle" style="top: 50%; right: 3%; animation-delay: 2.5s;">🍨</div>
+
+    <!-- CSS 3D Floating Spheres (Anti-gravity aesthetic) -->
+    <div class="sphere-3d sphere-1"></div>
+    <div class="sphere-3d sphere-2"></div>
+    <div class="sphere-3d sphere-3"></div>
+    <div class="sphere-3d sphere-4"></div>
+    <div class="sphere-3d sphere-5"></div>
+
+    <!-- Navigation Header -->
+    <header class="retro-header">
+        <div class="nav-logo">ARCHIT.EXE</div>
+        <nav class="retro-nav" aria-label="Main Navigation">
+            <a href="#parlor" class="nav-link active">🍦 PARLOR</a>
+            <a href="#projects" class="nav-link">💻 PROJECTS</a>
+            <a href="#experience" class="nav-link">💼 EXPERIENCE</a>
+            <a href="#sports" class="nav-link">🏀 SPORTS</a>
+            <a href="#volunteering" class="nav-link">🤝 VOLUNTEER</a>
+            <a href="#achievements" class="nav-link">🏆 AWARDS</a>
+            <a href="#education" class="nav-link">🎓 EDUCATION</a>
+        </nav>
+    </header>
+
+    <!-- Main Container wrapping the scrolling sections -->
+    <main class="portfolio-container">
+
+        <!-- SECTION 1: HERO & INTERACTIVE PARLOR COUNTER -->
+        <section id="parlor" class="scroll-section hero-section">
+            <div class="window-container" id="widget-window">
+                <!-- Title Bar -->
+                <header class="window-titlebar">
+                    <span>🌸 CLOUD_SCOOPS_PARLOR.EXE 🌸</span>
+                    <div class="window-controls">
+                        <button class="btn-control" aria-label="Minimize"></button>
+                        <button class="btn-control" aria-label="Maximize"></button>
+                        <button class="btn-control close" aria-label="Close"></button>
+                    </div>
+                </header>
+
+                <!-- Window Body -->
+                <div class="window-body">
+                    <div class="parlor-counter">
+                        <div class="counter-sign">CLOUD FLAVORS MENU</div>
+                        
+                        <!-- Ice cream scoops on display -->
+                        <div class="ice-cream-display">
+                            <!-- GCP Cotton Candy -->
+                            <div class="scoop-wrapper" id="scoop-gcp" data-cloud="gcp" tabindex="0" role="button" aria-label="Tasting GCP Cotton Candy flavor">
+                                <svg class="ice-cream-svg" viewBox="0 0 100 120" width="110" height="132" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Spoon -->
+                                    <path d="M70 20 L80 10 L85 15 L75 25 Z" fill="#b0b0b0" stroke="#800f2f" stroke-width="3" stroke-linejoin="miter" />
+                                    <!-- Scoop -->
+                                    <path d="M 25 60 C 15 60, 10 45, 20 35 C 15 20, 35 10, 50 15 C 65 10, 80 20, 80 35 C 90 45, 85 60, 75 60 Z" fill="#ffc2d1" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <!-- Swirls -->
+                                    <path d="M 30 35 C 40 25, 60 25, 70 35" fill="none" stroke="#ea4335" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M 35 48 C 45 40, 55 40, 65 48" fill="none" stroke="#ea4335" stroke-width="4" stroke-linecap="round" />
+                                    <!-- Cup -->
+                                    <path d="M 20 60 L 80 60 L 72 110 L 28 110 Z" fill="#fff0f3" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <path d="M 20 60 L 80 60 L 80 68 L 20 68 Z" fill="#ffb3c1" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <!-- GCP Logo -->
+                                    <polygon points="50,75 62,82 62,95 50,102 38,95 38,82" fill="none" stroke="#800f2f" stroke-width="2" />
+                                    <polygon points="50,76 60,81 50,86 40,81" fill="#4285f4" />
+                                    <polygon points="40,82 50,87 50,100 40,94" fill="#ea4335" />
+                                    <polygon points="50,87 60,82 60,94 50,100" fill="#34a853" />
+                                    <polygon points="50,82 55,84 50,87 45,84" fill="#fbbc05" />
+                                </svg>
+                                <div class="scoop-label">GCP COTTON CANDY</div>
+                            </div>
+                            
+                            <!-- Azure Blueberry Mint -->
+                            <div class="scoop-wrapper" id="scoop-azure" data-cloud="azure" tabindex="0" role="button" aria-label="Tasting Azure Blueberry Mint flavor">
+                                <svg class="ice-cream-svg" viewBox="0 0 100 120" width="110" height="132" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Mint Leaf -->
+                                    <path d="M 68 22 C 78 12, 85 22, 75 32 C 65 32, 65 22, 68 22 Z" fill="#52b788" stroke="#800f2f" stroke-width="3" />
+                                    <!-- Scoop -->
+                                    <path d="M 25 60 C 15 60, 10 45, 20 35 C 15 20, 35 10, 50 15 C 65 10, 80 20, 80 35 C 90 45, 85 60, 75 60 Z" fill="#bde0fe" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <!-- Swirls -->
+                                    <path d="M 30 35 C 40 28, 60 28, 70 35" fill="none" stroke="#0089d6" stroke-width="5" stroke-linecap="round" />
+                                    <path d="M 35 48 C 45 42, 55 42, 65 48" fill="none" stroke="#0089d6" stroke-width="4" stroke-linecap="round" />
+                                    <!-- Cup -->
+                                    <path d="M 20 60 L 80 60 L 72 110 L 28 110 Z" fill="#fff0f3" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <path d="M 20 60 L 80 60 L 80 68 L 20 68 Z" fill="#bde0fe" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <!-- Azure Logo -->
+                                    <path d="M 50 75 L 60 93 L 52 93 L 47 84 L 41 93 L 38 93 Z" fill="#0089d6" stroke="#800f2f" stroke-width="1.5" stroke-linejoin="miter" />
+                                    <polygon points="47,84 50,75 52,80 49,84" fill="#0072c6" />
+                                </svg>
+                                <div class="scoop-label">AZURE BLUEBERRY</div>
+                            </div>
+
+                            <!-- AWS Orange Creamsicle -->
+                            <div class="scoop-wrapper" id="scoop-aws" data-cloud="aws" tabindex="0" role="button" aria-label="Tasting AWS Orange Creamsicle flavor">
+                                <svg class="ice-cream-svg" viewBox="0 0 100 120" width="110" height="132" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Wafer Stick -->
+                                    <path d="M 25 15 L 35 25 L 15 45 L 5 35 Z" fill="#d4a373" stroke="#800f2f" stroke-width="3" />
+                                    <line x1="22" y1="18" x2="12" y2="28" stroke="#ffb703" stroke-width="3" />
+                                    <line x1="30" y1="26" x2="20" y2="36" stroke="#ffb703" stroke-width="3" />
+                                    <!-- Scoop -->
+                                    <path d="M 25 60 C 15 60, 10 45, 20 35 C 15 20, 35 10, 50 15 C 65 10, 80 20, 80 35 C 90 45, 85 60, 75 60 Z" fill="#fbd1a2" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <!-- Swirls -->
+                                    <path d="M 30 35 C 40 28, 60 28, 70 35" fill="none" stroke="#ff9900" stroke-width="5" stroke-linecap="round" />
+                                    <path d="M 35 48 C 45 42, 55 42, 65 48" fill="none" stroke="#ff9900" stroke-width="4" stroke-linecap="round" />
+                                    <!-- Cup -->
+                                    <path d="M 20 60 L 80 60 L 72 110 L 28 110 Z" fill="#fff0f3" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <path d="M 20 60 L 80 60 L 80 68 L 20 68 Z" fill="#ffb703" stroke="#800f2f" stroke-width="4" stroke-linejoin="miter" />
+                                    <!-- AWS Logo -->
+                                    <text x="50" y="86" font-family="'Press Start 2P', monospace" font-size="8" fill="#ff9900" font-weight="bold" text-anchor="middle" stroke="#800f2f" stroke-width="1.5" paint-order="stroke fill">aws</text>
+                                    <path d="M 38 90 Q 50 96 62 90" fill="none" stroke="#ff9900" stroke-width="2" stroke-linecap="round" />
+                                    <polygon points="62,90 58,88 60,92" fill="#ff9900" />
+                                </svg>
+                                <div class="scoop-label">AWS CREAMSICLE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dialogue Box -->
+                    <div class="dialogue-box">
+                        <h1 class="dialogue-text" id="dialogue-text">Welcome to CLOUD SCOOPS parlor! Walk up to the counter and click a flavor to taste Archit's cloud experience.</h1>
+                        <span class="dialogue-arrow" aria-hidden="true">▼</span>
+                    </div>
+
+                    <!-- Interactive Console Buttons -->
+                    <div class="console-row" aria-label="Widget Controls">
+                        <button class="btn-game" id="btn-melody">🎵 MUSIC PLAY</button>
+                        <button class="btn-game" id="btn-sparkle">✨ SPAWN MAGIC</button>
+                        <button class="btn-game" id="btn-crt">📺 CRT OFF</button>
+                        <button class="btn-game" id="btn-float">🛸 FLOAT ON</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CLOUD FLAVOR REVIEWS (SKILLS IN DETAIL) -->
+        <section id="reviews" class="scroll-section reviews-section">
+            <h2 class="section-title">🍦 TASTING NOTES</h2>
+            <div class="reviews-grid">
+                
+                <!-- Azure Review Card -->
+                <div class="review-card" id="card-azure">
+                    <div class="card-header border-azure">AZURE BLUEBERRY MINT</div>
+                    <div class="stars" aria-label="Azure rating: 4 out of 5 stars">⭐⭐⭐⭐<span class="empty-star">⭐</span></div>
+                    <p class="review-comment">"Chilly, crisp, and exceptionally reliable. Archit has co-led community cloud projects and maintains a solid footing in Azure services, including Microsoft AI Skills Fest achievements."</p>
+                    <div class="badge-tag">4.0 / 5.0</div>
+                </div>
+
+                <!-- GCP Review Card -->
+                <div class="review-card" id="card-gcp">
+                    <div class="card-header border-gcp">GCP COTTON CANDY</div>
+                    <div class="stars" aria-label="GCP rating: 3.5 out of 5 stars">⭐⭐⭐<span class="half-star-container"><span class="star-base">⭐</span><span class="star-filled">⭐</span></span><span class="empty-star">⭐</span></div>
+                    <p class="review-comment">"Super sweet tooling with incredibly smooth integration. Archit holds the Google Cloud Cybersecurity Certificate, holds 42 skill badges, and has achieved 12 developer badges."</p>
+                    <div class="card-gallery-mini" aria-label="GCP achievements gallery">
+                        <div class="polaroid-stack" role="button" tabindex="0" aria-label="GCP achievements stack. Click to cycle.">
+                            <div class="polaroid-card" data-img-id="gcp-2025">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/GCP/GCP 2025 SWAGS.jpg" alt="Google Cloud Campaign 2025">
+                                </div>
+                                <div class="polaroid-caption">GCP 2025</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="gcp-2025" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="gcp-2026">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/GCP/GCP 2026 swags under gdg on campus.jpg" alt="GCP Developer Milestones 2026">
+                                </div>
+                                <div class="polaroid-caption">GCP 2026</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="gcp-2026" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="badge-tag">3.5 / 5.0</div>
+                </div>
+
+                <!-- AWS Review Card -->
+                <div class="review-card" id="card-aws">
+                    <div class="card-header border-aws">AWS ORANGE CREAMSICLE</div>
+                    <div class="stars" aria-label="AWS rating: 3 out of 5 stars">⭐⭐⭐<span class="empty-star">⭐⭐</span></div>
+                    <p class="review-comment">"A classic orange creamsicle with zesty enterprise features. Archit was selected as an AWS AI & ML Scholar (2026 Challenge Completion) and knows EC2, S3, and cloud automation basics."</p>
+                    <div class="card-gallery-mini" aria-label="AWS achievements gallery">
+                        <div class="polaroid-stack" role="button" tabindex="0" aria-label="AWS achievements stack. Click to cycle.">
+                            <div class="polaroid-card" data-img-id="aws-champ">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/aws/AWS.jpg" alt="AWS Cloud Champion">
+                                </div>
+                                <div class="polaroid-caption">AWS CHAMPION</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="aws-champ" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="aws-scholar">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/aws/AWS2.jpg" alt="AWS AI/ML Scholar">
+                                </div>
+                                <div class="polaroid-caption">AI/ML SCHOLAR</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="aws-scholar" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="badge-tag">3.0 / 5.0</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: PROJECTS -->
+        <section id="projects" class="scroll-section projects-section">
+            <h2 class="section-title">💻 DISPLAY CASE</h2>
+
+            <!-- Project 1: Sign Language Translator (Purple Theme) -->
+            <div class="display-item project-item purple-theme full-width-project">
+                <div class="display-item-header">PROJECT_01.EXE (NIRMITIVEDH COMPETITION)</div>
+                <div class="display-item-body split-project-body">
+                    <div class="project-info">
+                        <h3>Sign Language Translator</h3>
+                        <div class="tech-stack-row">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <p>Bro, bridging the communication gap is literal absolute cinema! We built a real-time translator translating sign gestures to text. Attended our first ever in-person project competition <strong>NIRMITIVEDH</strong> at SOE Ajeenkya DY Patil University. The experience was goated, the judges (like Dr. Yogesh M. Rajput) were very knowledgeable, and the campus was cool!</p>
+                        <ul class="duties-list">
+                            <li>Co-authored the research paper and led project development.</li>
+                            <li>Integrated MediaPipe for hand-tracking and TensorFlow for the ML classifier.</li>
+                            <li>Accompanied by Vaibhav Golekar, Vasudha Kale, Rushikesh Nalinde, Siddharth Pardeshi, Akhilesh Gawade & BRB/A2R Media squad.</li>
+                        </ul>
+                        <div class="project-btn-row">
+                            <a href="https://github.com/BABATHESLAYER/Signtranslate.git" target="_blank" rel="noopener noreferrer" class="btn-game btn-link">💻 GITHUB</a>
+                            <a href="https://ijmrset.com/upload/43_Sign%20Language.pdf" target="_blank" rel="noopener noreferrer" class="btn-game btn-link">📄 PAPER.PDF ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="polaroid-stack" role="button" tabindex="0" aria-label="Project photo stack. Click to cycle.">
+                            <div class="polaroid-card" data-img-id="nirmitivedh-award">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/nirmitivedh/PROJECT AWARD.jpg" alt="Project Excellence Award">
+                                </div>
+                                <div class="polaroid-caption">EXCELLENCE AWARD</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="nirmitivedh-award" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="nirmitivedh-geotag">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/nirmitivedh/PROEJCT GEO TAG.jpg" alt="Sign Language Geo-Tag">
+                                </div>
+                                <div class="polaroid-caption">GEO TAG DEMO</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="nirmitivedh-geotag" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="nirmitivedh-cert">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/nirmitivedh/certificate.jpg" alt="Nirmitivedh Certificate">
+                                </div>
+                                <div class="polaroid-caption">CERTIFICATE</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="nirmitivedh-cert" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects 2 & 3: Hardware Labs (Rain/Farm Blue & Radar Green) -->
+            <div class="dual-radar-section">
+                <!-- Left: ESP32 Farming (Blue Theme & Rain/Farm Screen) -->
+                <div class="display-item radar-labs-item blue-theme">
+                    <div class="display-item-header">HARDWARE_LAB_01.EXE (SMART IRRIGATION)</div>
+                    <div class="display-item-body radar-labs-body">
+                        <div class="farm-screen" role="button" tabindex="0" aria-label="Smart Irrigation Rain and Farm screen">
+                            <div class="farm-plant">🌱</div>
+                            <div class="rain-drops">
+                                <span class="drop d1">💧</span>
+                                <span class="drop d2">💧</span>
+                                <span class="drop d3">💧</span>
+                                <span class="drop d4">💧</span>
+                            </div>
+                        </div>
+                        <div class="radar-project-info">
+                            <h3>ESP32 Smart Farming</h3>
+                            <p>Automating irrigation is a literal cheat code! 🌾 Hooked up an ESP32 microcontroller with moisture sensors, temperature probes, and water pumps. The system checks moisture levels and waters crops autonomously. Full hardware-to-cloud mapping done and dusted!</p>
+                            <div class="polaroid-stack" role="button" tabindex="0" aria-label="ESP32 farming photo stack. Click to cycle.">
+                                <div class="polaroid-card" data-img-id="radar-farming-model">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/autoti/project.JPG" alt="ESP32 Farming model">
+                                    </div>
+                                    <div class="polaroid-caption">WORKING MODEL</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="radar-farming-model" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                                <div class="polaroid-card contain-img" data-img-id="radar-farming-team">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/autoti/team.JPG" alt="Farming project tech team">
+                                    </div>
+                                    <div class="polaroid-caption">TEAM</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="radar-farming-team" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                            </div>
+                            <a href="https://github.com/itz-abhijeet/AI-Based-Smart-Irrigation-System-Model-" target="_blank" rel="noopener noreferrer" class="btn-game btn-link" style="display: block; text-align: center; margin-top: 15px; width: 100%; box-sizing: border-box;">💻 GITHUB</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Radar & Aircraft ID (Green Theme & Radar Screen) -->
+                <div class="display-item radar-labs-item green-theme">
+                    <div class="display-item-header">HARDWARE_LAB_02.EXE (GREEN TARGET)</div>
+                    <div class="display-item-body radar-labs-body">
+                        <div class="radar-screen green-radar">
+                            <div class="radar-sweep"></div>
+                            <div class="radar-grid"></div>
+                            <div class="radar-blip blip-radar green-blip" data-project="radar-id" role="button" tabindex="0" aria-label="Ultrasonic Radar blip"></div>
+                        </div>
+                        <div class="radar-project-info">
+                            <h3>Radar Object & Aircraft Identification</h3>
+                            <p>Real-time radar obstacle mapping! 📡 Built an ultrasonic sweep coordinate tracker that sweeps 180 degrees, catches target ranges/angles, and visualizes them on a green radar dashboard. Fits right into military-spec target identification loops.</p>
+                            <div class="polaroid-stack" style="margin: 0 auto 15px auto;">
+                                <div class="polaroid-card contain-img" data-img-id="radar-object-id">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/project/dashboard.png" alt="Radar mapping dashboard">
+                                    </div>
+                                    <div class="polaroid-caption">RADAR DASHBOARD</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="radar-object-id" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                                <div class="polaroid-card" data-img-id="radar-object-app">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/project/andorid.png" alt="Radar Android App Interface">
+                                    </div>
+                                    <div class="polaroid-caption">ANDROID DEV</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="radar-object-app" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                            </div>
+                            <a href="https://github.com/itz-abhijeet/Air-Defense-Using-Artificial-Intelligence" target="_blank" rel="noopener noreferrer" class="btn-game btn-link" style="display: block; text-align: center; margin-top: 15px; margin-bottom: 10px; width: 100%; box-sizing: border-box;">💻 GITHUB</a>
+                            <!-- Research Paper Button Shifted Here -->
+                            <a href="images/project/paper.pdf" target="_blank" class="radar-badge-btn pdf-badge" title="Open Research Paper PDF" aria-label="Download Research Paper PDF" style="display: flex; justify-content: center; width: 100%; box-sizing: border-box;">
+                                <span class="badge-icon">📄</span>
+                                <span class="badge-title">VIEW RESEARCH PAPER.PDF ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: AutoTI 24-hr Hackathon (Yellow Theme) -->
+            <div class="display-item project-item yellow-theme full-width-project">
+                <div class="display-item-header">PROJECT_04.EXE (MIT ADT GRAND AI CHALLENGE)</div>
+                <div class="display-item-body split-project-body">
+                    <div class="project-info">
+                        <h3>AutoTI AI Security Agent</h3>
+                        <div class="tech-stack-row">
+                            <span class="tech-tag">Gemini AI</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <p>The era of the "Security Analyst" is ending. The era of the AI Security Agent is here! 🤖🔥 On 4-5 November 2025, my team and I locked ourselves in for 24 hours at MIT ADT to build AutoTI. How does an overnight hackathon go? It’s literal chaos—surviving on pure adrenaline and endless cans of HELL ENERGY (not sponsored but open to it). Wrestling with Docker at 2 AM, debugging code that compiled at 4 AM, and final pitches to panel judges while running on 0 hours of sleep. Absolute cinema!</p>
+                        <ul class="duties-list">
+                            <li>Hooked up Google’s Gemini to AlienVault OTX via a LangChain agent.</li>
+                            <li>A system that fetches global threat data, normalizes noise, and generates intelligence reports.</li>
+                            <li>Built autonomous dockerized loops. Teammates: Atharva Gite and Abhijeet Pawar.</li>
+                        </ul>
+                        <div class="project-btn-row">
+                            <a href="https://github.com/AtharvaGite-04/AutoTI" target="_blank" rel="noopener noreferrer" class="btn-game btn-link">💻 VIEW ON GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="polaroid-stack" role="button" tabindex="0" aria-label="AutoTI photo stack. Click to cycle.">
+                            <div class="polaroid-card" data-img-id="autoti-hack-1">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/autoti/HACKTHON 24.jpg" alt="Hackathon 24 Pitch">
+                                </div>
+                                <div class="polaroid-caption">HACKATHON '24</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="autoti-hack-1" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="autoti-hack-2">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/autoti/HACKTHON24 2.jpg" alt="Hackathon 24 Presentation">
+                                </div>
+                                <div class="polaroid-caption">PRESENTATION</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="autoti-hack-2" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: EXPERIENCE (WORK LOG) -->
+        <section id="experience" class="scroll-section experience-section">
+            <h2 class="section-title">💼 WORK_LOG.EXE</h2>
+            <div class="experience-layout">
+                
+                <!-- SysTech Solutions ERP Internship (Full Width) -->
+                <div class="display-item experience-item full-width-exp">
+                    <div class="display-item-header">EXPERIENCE_01.EXE (SYSTECH SOLUTIONS)</div>
+                    <div class="display-item-body split-project-body">
+                        <div class="project-info">
+                            <h3>SysTech Solutions Pune</h3>
+                            <div class="role-title">Software Developer Intern</div>
+                            <p>Internship: Completed. ERP System: Built, released, deployed, and done and dusted! 🏗️ Spent weeks in the trenches building a full travel management ERP system—wrestling with SQL schemas, backend logic, automating workflows, and pushing it to the cloud.</p>
+                            <ul class="duties-list">
+                                <li>Built travel management database structures and automated workflows.</li>
+                                <li>Massive carry on Cloud & DevOps thanks to skills mentor Shubham Londhe (Azure experience unlocked here!).</li>
+                                <li>Late-night debugging trenches: Atharva Gite & Abhijeet Pawar. Lit era.</li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery">
+                            <div class="polaroid-stack" role="button" tabindex="0" aria-label="ERP photo stack. Click to cycle.">
+                                <div class="polaroid-card" data-img-id="erp-cert">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/erp/certificate.jpeg" alt="ERP Internship Certificate">
+                                    </div>
+                                    <div class="polaroid-caption">ERP CERTIFICATE</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="erp-cert" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                                <div class="polaroid-card" data-img-id="erp-cab">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/erp/working in cab (prod issues fix devops).jpeg" alt="Fixing Prod Issues in Cab">
+                                    </div>
+                                    <div class="polaroid-caption">CAB TRENCHES</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="erp-cab" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                                <div class="polaroid-card" data-img-id="erp-deploy">
+                                    <div class="polaroid-img-wrapper">
+                                        <img src="images/erp/deployment after devlopment.jpeg" alt="ERP Deployment Milestone">
+                                    </div>
+                                    <div class="polaroid-caption">DEPLOYMENT DONE</div>
+                                    <button class="btn-cert-view polaroid-view-btn" data-img-id="erp-deploy" aria-label="View Fullscreen">👁️</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Split Grid for ProAzure and CC Club -->
+                <div class="experience-subgrid">
+                    
+                    <!-- ProAzure Android Developer -->
+                    <div class="display-item experience-item">
+                        <div class="display-item-header">EXPERIENCE_02.EXE (PROAZURE)</div>
+                        <div class="display-item-body">
+                            <h3>ProAzure</h3>
+                            <div class="role-title">Android Developer Intern</div>
+                            <p>Dipped my toes into mobile architecture. Built native Android projects during diploma days, learning UI lifecycles, SDK integration, and local database management.</p>
+                            <ul class="duties-list">
+                                <li>Developed mobile UI layouts and handled API data requests.</li>
+                                <li>Interfaced local storage using SQLite/Room databases.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Computing Club -->
+                    <div class="display-item experience-item">
+                        <div class="display-item-header">EXPERIENCE_03.EXE (CC_CLUB)</div>
+                        <div class="display-item-body">
+                            <h3>Cloud Computing Club</h3>
+                            <div class="role-title">Technical Team Member</div>
+                            <p>The technical backbone of the club! Handled cloud infrastructure setups, curated solutions, coordinated with flows, and debugged doubts for the junior cohort. AWS experience unlocked here!</p>
+                            <ul class="duties-list">
+                                <li>Coordinated cloud architecture workshops and doubt-solving sessions.</li>
+                                <li>Also co-founded a media startup, establishing workflows and video productions.</li>
+                            </ul>
+                            <div class="project-gallery" style="margin-top: 15px;">
+                                <div class="polaroid-stack" role="button" tabindex="0" aria-label="Club photo stack. Click to cycle.">
+                                    <div class="polaroid-card contain-img" data-img-id="cc-tech-team">
+                                        <div class="polaroid-img-wrapper">
+                                            <img src="images/cc club/TECH TEAM.JPG" alt="Cloud Club Tech Team">
+                                        </div>
+                                        <div class="polaroid-caption">TECH TEAM</div>
+                                        <button class="btn-cert-view polaroid-view-btn" data-img-id="cc-tech-team" aria-label="View Fullscreen">👁️</button>
+                                    </div>
+                                    <div class="polaroid-card" data-img-id="cc-poster">
+                                        <div class="polaroid-img-wrapper">
+                                            <img src="images/cc club/cloud club poaster.png" alt="Cloud Club Poster">
+                                        </div>
+                                        <div class="polaroid-caption">CLUB POSTER</div>
+                                        <button class="btn-cert-view polaroid-view-btn" data-img-id="cc-poster" aria-label="View Fullscreen">👁️</button>
+                                    </div>
+                                    <div class="polaroid-card contain-img" data-img-id="cc-catalyst">
+                                        <div class="polaroid-img-wrapper">
+                                            <img src="images/cc club/club ctalyst.png" alt="Club Catalyst Event">
+                                        </div>
+                                        <div class="polaroid-caption">CLUB CATALYST</div>
+                                        <button class="btn-cert-view polaroid-view-btn" data-img-id="cc-catalyst" aria-label="View Fullscreen">👁️</button>
+                                    </div>
+                                    <div class="polaroid-card" data-img-id="cc-help">
+                                        <div class="polaroid-img-wrapper">
+                                            <img src="images/cc club/tech team at work.png" alt="Doubt Solving Session">
+                                        </div>
+                                        <div class="polaroid-caption">DOUBT SOLVING</div>
+                                        <button class="btn-cert-view polaroid-view-btn" data-img-id="cc-help" aria-label="View Fullscreen">👁️</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: SPORTS (BASKETBALL) -->
+        <section id="sports" class="scroll-section sports-section">
+            <h2 class="section-title">🏀 THE BASKETBALL COURT</h2>
+            <div class="display-item sports-item full-width-sports">
+                <div class="display-item-header">SPORTS_HIGH_SCORES.EXE</div>
+                <div class="display-item-body split-project-body">
+                    <div class="project-info">
+                        <h3>Inter-Department Basketball Champions</h3>
+                        <div class="role-title">Back-to-Back Tournament Winners (2nd Consecutive Year!) 🏀</div>
+                        <p>This was all about Teamwork, Endurance, Defense, and Quick Thinking—something common between Cyberspace and Basketball! It was my last one in this college sadly. We were also runner-up for the D2 West Zone (IEDSSA) for the second time, hosted IEDSSA for the second time, and proudly represented JSPM's JSPOLY as the first-ever basketball team!</p>
+                        <ul class="duties-list">
+                            <li>Led court coordination, tactical play-calling, and defensive setups.</li>
+                            <li>Secured consecutive championships for the department.</li>
+                            <li>Hosted regional zone tournaments (IEDSSA) and made college history.</li>
+                        </ul>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="polaroid-stack" role="button" tabindex="0" aria-label="Sports photo stack. Click to cycle.">
+                            <div class="polaroid-card contain-img" data-img-id="memories-bball-team">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/sports/basktball team.jpg" alt="Inter-Department Basketball Winners">
+                                </div>
+                                <div class="polaroid-caption">BBALL WINNERS</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="memories-bball-team" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="memories-bball-trophy">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/sports/trophy.jpg" alt="Basketball Championship Trophy">
+                                </div>
+                                <div class="polaroid-caption">TROPHY LIFT</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="memories-bball-trophy" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="memories-bball-cert">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/sports/certi with tophy.jpg" alt="Basketball Tournament Certificate">
+                                </div>
+                                <div class="polaroid-caption">BBALL CERTIFICATE</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="memories-bball-cert" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: VOLUNTEERING (SIH JURY COORDINATOR) -->
+        <section id="volunteering" class="scroll-section volunteering-section">
+            <h2 class="section-title">🤝 VOLUNTEER QUESTS</h2>
+            <div class="display-item volunteering-item full-width-volunteer">
+                <div class="display-item-header">VOLUNTEER_LOG.EXE (SMART INDIA HACKATHON)</div>
+                <div class="display-item-body split-project-body">
+                    <div class="project-info">
+                        <h3>Jury Management Volunteer - SIH Grand Final</h3>
+                        <div class="role-title">Smart India Hackathon Grand Final Coordinator</div>
+                        <p>Jury experience was just volunteering so we added it here! Volunteered for managing the grand final of India's biggest hackathon. Slept next to zero—5 days * 24 hours lock-in. Managed jury tasks, coordinated evaluations, stayed overnight, and kept the hackathon running smoothly.</p>
+                        <ul class="duties-list">
+                            <li>Managed schedules and worktasks for elite industry jury members.</li>
+                            <li>Handled logistics and team assessments across multi-day evaluation phases.</li>
+                            <li>Ensured evaluation grids and scoresheets remained updated.</li>
+                        </ul>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="polaroid-stack" style="margin: 0 auto;">
+                            <div class="polaroid-card contain-img" data-img-id="sih-jury">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/sih/JURY TEAM.JPG" alt="SIH Jury Coordination Team">
+                                </div>
+                                <div class="polaroid-caption">JURY TEAM</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="sih-jury" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: EDUCATION -->
+        <section id="education" class="scroll-section education-section">
+            <h2 class="section-title">🎓 RECIPE BOOK</h2>
+            <div class="education-container">
+                <div class="notebook-page">
+                    <div class="notebook-column">
+                        <div class="notebook-entry">
+                            <h3>B.Tech. Computer Science & Eng.</h3>
+                            <div class="college-title">MIT ADT University</div>
+                            <p class="college-details">Focus on Development, ML & Cloud. Gained strong problem-solving expertise, software development fundamentals, and data science methodologies.</p>
+                        </div>
+                    </div>
+                    <div class="notebook-column">
+                        <div class="notebook-entry">
+                            <h3>Diploma in Computer Engineering</h3>
+                            <div class="college-title">MSBTE @ JSPM'S JSPOLY</div>
+                            <p class="college-details">Gained foundational computer engineering training, hardware basics, object-oriented concepts, and agile frameworks (SCRUM) training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: ACHIEVEMENTS & HIGH SCORES -->
+        <section id="achievements" class="scroll-section achievements-section">
+            <h2 class="section-title">🏆 HIGH SCORES</h2>
+            
+            <div class="achievements-layout">
+                <div class="leaderboard">
+                    <!-- Row 1 -->
+                    <a href="https://learn.microsoft.com/en-gb/users/architgaware-2282/" target="_blank" rel="noopener noreferrer" class="leaderboard-row">
+                        <div class="rank">#01</div>
+                        <div class="leaderboard-title">GUINNESS WORLD RECORD™ Holder - Microsoft AI Skills Fest</div>
+                        <div class="points">Verify ↗</div>
+                    </a>
+
+                    <!-- Row 2 -->
+                    <a href="https://www.credly.com/badges/d538f25b-648d-42d3-afc1-faf99bb43d5b/linked_in?t=sdf77s" target="_blank" rel="noopener noreferrer" class="leaderboard-row">
+                        <div class="rank">#02</div>
+                        <div class="leaderboard-title">Google Cloud Cybersecurity Certificate</div>
+                        <div class="points-group">
+                            <span class="points">Credly ↗</span>
+                            <span class="btn-cert-view" data-img-id="cert-cyber" title="View Certificate" role="button" tabindex="0">👁️</span>
+                        </div>
+                    </a>
+
+                    <!-- Row 3 -->
+                    <div class="leaderboard-row no-link">
+                        <div class="rank">#03</div>
+                        <div class="leaderboard-title">Winners🏆 Inter-Department Basketball Tournament (Back-to-Back!) 🏀</div>
+                        <div class="points-group">
+                            <span class="points">Champions</span>
+                            <span class="btn-cert-view" data-img-id="memories-bball-team" title="View Team Photo" role="button" tabindex="0">👁️</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="leaderboard-row no-link">
+                        <div class="rank">#04</div>
+                        <div class="leaderboard-title">Best Media Manager Award (258k+ Views Content Lead) 🏆</div>
+                        <div class="points-group">
+                            <span class="points">258k+ Views</span>
+                            <span class="btn-cert-view" data-img-id="memories-media-award" title="View Award Photo" role="button" tabindex="0">👁️</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <a href="https://www.cloudskillsboost.google/public_profiles/f1ab334f-feda-47ff-a8d9-c18cce669e87" target="_blank" rel="noopener noreferrer" class="leaderboard-row">
+                        <div class="rank">#05</div>
+                        <div class="leaderboard-title">42 Google Cloud Skill Badges & Diamond League Topper</div>
+                        <div class="points-group">
+                            <span class="points">Profile ↗</span>
+                            <span class="btn-cert-view" data-img-id="cert-gcp-30" title="View Milestone Image" role="button" tabindex="0">👁️</span>
+                        </div>
+                    </a>
+
+                    <!-- Row 6 -->
+                    <a href="https://g.dev/Architgaware" target="_blank" rel="noopener noreferrer" class="leaderboard-row">
+                        <div class="rank">#06</div>
+                        <div class="leaderboard-title">12 Google Developer Badges</div>
+                        <div class="points">Profile ↗</div>
+                    </a>
+
+                    <!-- Row 7 -->
+                    <a href="https://www.credly.com/badges/28c38e08-93c6-4ee0-ae0f-64e5a43b9e3b/public_url" target="_blank" rel="noopener noreferrer" class="leaderboard-row">
+                        <div class="rank">#07</div>
+                        <div class="leaderboard-title">Cisco Certification - Cybersecurity Essentials</div>
+                        <div class="points">Credly ↗</div>
+                    </a>
+
+                    <!-- Row 8 -->
+                    <div class="leaderboard-row no-link">
+                        <div class="rank">#08</div>
+                        <div class="leaderboard-title">Awarded Best Social Media Manager by College (3 Years)</div>
+                        <div class="points">Award</div>
+                    </div>
+                </div>
+
+                <!-- Media Awards Polaroid grid -->
+                <div class="memories-gallery-container">
+                    <div class="shelf-label">MEDIA CREATIVES</div>
+                    <div class="card-gallery">
+                        <div class="polaroid-stack" role="button" tabindex="0" aria-label="Media awards stack. Click to cycle.">
+                            <div class="polaroid-card" data-img-id="memories-media-award">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/media/award.jpg" alt="Best Media Manager Award Ceremony">
+                                </div>
+                                <div class="polaroid-caption">MEDIA AWARD</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="memories-media-award" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                            <div class="polaroid-card" data-img-id="memories-media-poster">
+                                <div class="polaroid-img-wrapper">
+                                    <img src="images/media/poster.jpg" alt="Best Media Manager Banner Design">
+                                </div>
+                                <div class="polaroid-caption">POSTER VIBES</div>
+                                <button class="btn-cert-view polaroid-view-btn" data-img-id="memories-media-poster" aria-label="View Fullscreen">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virtual Badge Shelf -->
+            <div class="badge-shelf-container">
+                <div class="shelf-label">STICKER COLLECTION</div>
+                <div class="shelf">
+                    <!-- GCP Badge sticker -->
+                    <div class="sticker-wrapper" title="Google Cloud Cybersecurity">
+                        <div class="sticker badge-gcp">
+                            <span class="sticker-text">GCP SEC</span>
+                        </div>
+                    </div>
+                    <!-- Microsoft GWR sticker -->
+                    <div class="sticker-wrapper" title="Microsoft Guinness Record Holder">
+                        <div class="sticker badge-gwr">
+                            <span class="sticker-text">GWR 2025</span>
+                        </div>
+                    </div>
+                    <!-- AWS Scholar sticker -->
+                    <div class="sticker-wrapper" title="AWS AI & ML Scholar">
+                        <div class="sticker badge-aws">
+                            <span class="sticker-text">AWS ML</span>
+                        </div>
+                    </div>
+                    <!-- AutoTI sticker -->
+                    <div class="sticker-wrapper" title="AutoTI AI Security Agent">
+                        <div class="sticker badge-autoti">
+                            <span class="sticker-text">AUTO-TI</span>
+                        </div>
+                    </div>
+                    <!-- SysTech ERP sticker -->
+                    <div class="sticker-wrapper" title="SysTech ERP System">
+                        <div class="sticker badge-erp">
+                            <span class="sticker-text">SYS-ERP</span>
+                        </div>
+                    </div>
+                    <!-- Basketball sticker -->
+                    <div class="sticker-wrapper" title="Basketball Tournament Winner">
+                        <div class="sticker badge-bball">
+                            <span class="sticker-text">B-BALL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shelf-wood"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Retro Footer Contacts -->
+    <footer class="retro-footer">
+        <div class="footer-contacts">
+            <span class="contact-item">📧 <a href="mailto:architgaware@gmail.com">architgaware@gmail.com</a></span>
+            <span class="contact-item">📞 +91 93569 93080</span>
+            <span class="contact-item">🔗 <a href="https://www.linkedin.com/in/architgaware/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            <span class="contact-item">💻 <a href="https://g.dev/Architgaware" target="_blank" rel="noopener noreferrer">G.Dev Profile</a></span>
+        </div>
+        <p class="copyright">© 2026 ARCHIT GAWARE. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- Retro PHOTO_VIEWER.EXE Modal Overlay -->
+    <div id="photo-viewer-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+        <div class="window-container" id="viewer-window">
+            <header class="window-titlebar">
+                <span>🌸 PHOTO_VIEWER.EXE 🌸</span>
+                <div class="window-controls">
+                    <button class="btn-control close" id="viewer-close" aria-label="Close Image Viewer"></button>
+                </div>
+            </header>
+            <div class="window-body modal-body">
+                <div class="viewer-screen-container">
+                    <div class="crt-overlay"></div>
+                    <img id="viewer-img" src="" alt="Full size image">
+                </div>
+                <div class="viewer-dialogue">
+                    <p id="viewer-caption" class="dialogue-text"></p>
+                </div>
+                <div class="viewer-controls-row">
+                    <button class="btn-game" id="viewer-zoom-in">🔍 ZOOM +</button>
+                    <button class="btn-game" id="viewer-zoom-out">🔍 ZOOM -</button>
+                    <button class="btn-game" id="viewer-close-btn">❌ CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Script -->
+    <script src="app.js"></script>
+</body>
+</html>

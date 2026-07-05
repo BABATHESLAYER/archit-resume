@@ -457,9 +457,9 @@ document.addEventListener('DOMContentLoaded', () => {
             caption: 'The core technical team members of the Cloud Computing Club, managing operations and solution architecture.'
         },
         'cc-poster': {
-            title: 'AWS_CLUB_POSTER.EXE',
+            title: 'CC_CLUB_LOGO.EXE',
             src: 'images/cc club/cloud club poaster.png',
-            caption: 'AWS Cloud Club promotion poster co-designed by Archit.'
+            caption: 'Cloud Computing Club logo displayed on a laptop for artistic reasons.'
         },
         'cc-catalyst': {
             title: 'CLUB_CATALYST_EVENT.EXE',

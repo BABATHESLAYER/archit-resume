@@ -889,14 +889,30 @@ body {
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
     .retro-header {
-        padding: 0 15px;
+        padding: 0 10px;
+    }
+    .nav-logo {
+        flex-shrink: 0;
+        font-size: 11px;
+        margin-right: 8px;
     }
     .retro-nav {
-        gap: 8px;
+        gap: 6px;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        padding: 5px 0;
+        flex-grow: 1;
+    }
+    .retro-nav::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, Opera */
     }
     .nav-link {
-        font-size: 8px;
+        font-size: 7px;
         padding: 4px 6px;
+        flex-shrink: 0;
     }
     .portfolio-container {
         gap: 60px;

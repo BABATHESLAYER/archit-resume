@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -803,8 +804,7 @@ body {
     background: var(--pastel-pink);
     padding: 30px 20px;
     text-align: center;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%); /* Full width footer */
+    width: 100%;
 }
 
 .footer-contacts {
@@ -888,6 +888,24 @@ body {
 
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
+    .sphere-3d, .sparkle-particle {
+        display: none;
+    }
+    .shelf {
+        width: 100%;
+        gap: 5px;
+    }
+    .shelf-wood {
+        width: 100%;
+    }
+    .sticker {
+        width: 50px;
+        height: 50px;
+        border-width: 2px;
+    }
+    .sticker-text {
+        font-size: 6px;
+    }
     .retro-header {
         padding: 0 10px;
     }
@@ -959,6 +977,25 @@ body {
 
 /* Extra small mobile screens adjustments */
 @media (max-width: 480px) {
+    .sticker {
+        width: 38px;
+        height: 38px;
+        border-width: 1.5px;
+    }
+    .sticker-text {
+        font-size: 5px;
+    }
+    .leaderboard-row {
+        padding: 8px 10px;
+    }
+    .rank {
+        width: 35px;
+        font-size: 8px;
+    }
+    .leaderboard-title {
+        font-size: 7.5px;
+        padding-right: 8px;
+    }
     .card-gallery {
         padding: 10px;
         min-height: 310px;
